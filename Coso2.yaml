@@ -1,0 +1,18 @@
+---
+
+- name: General Config
+
+  hosts: routers
+
+  tasks:
+
+  - name: Add Banner
+
+    ios_banner:
+      banner: login
+      text: |
+        Coso was here
+        therefore deserves a 100
+      state: present
+
+
